@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Looping Statment</title>
+    </head>
+    <body>
+        <h2>Welcome to the JavaScript Program</h2>
+    </body>
+    <script type = "text/javascript" >
+        /* 
+        For Loop : 
+        for (var count  = 0; count <= 10; count++){
+            document.write(count+ "<br/>");
+        }
+        document.write("Loop End !"); */
+
+        /*
+        while loop :
+        var count = 0;
+        while(count <=10){
+            document.write(count+ "<br/>");
+            count ++;
+        }
+        document.write("Loop End !"); */ 
+        
+        //forEach : **imp
+        var cars = ["car1", "car2", "car3", "car4", "car5"];
+        cars.forEach(car);
+
+        function car(item, index, array){
+            //document.write(index+" = > "+item+"<br/>");
+            array[index] = item+" 0"; 
+        }
+
+        cars.forEach(after);
+
+        function after(item, index){
+            document.write(index+" = > "+item+"<br/>");
+        }
+    </script>
+</html>

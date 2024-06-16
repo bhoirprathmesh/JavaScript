@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Open&Close Function</title>
+    </head>
+    <body>
+        
+        <button onclick="openwin()">Open Google</button>
+        <button onclick="closewin()">Close Google</button>
+        
+    </body>
+    <script type = "text/javascript" >
+        var win;
+        function openwin() {
+            win = window.open("https://www.google.com/", "width=500px", "height=300px");
+        }
+
+        function closewin() {
+            win.close();
+        }
+    </script>
+</html> 

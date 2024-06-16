@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>ClearInterval() Function</title>
+    </head>
+    <body>
+        <h1 id = "h1"></h1>
+        <button onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+    </body>
+    <script type = "text/javascript" >
+        var my;
+       function start() {
+        my = setInterval(count, 1000);
+        var c = 0;
+            function count(){
+                document.getElementById('h1').innerHTML = c;
+                c++;
+            }
+       }
+
+       function stop() {
+            clearInterval(my);
+            alert("Timeout stopped !");
+       }
+    </script>
+</html> 

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Number Validation</title>
+    </head>
+    <body>
+        Please Enter Your Number : 
+        <br>
+        <input type="" name="" onkeyup="validate(this)">
+        <div id = "res"></div>
+    </body>
+    <script type = "text/javascript" >
+
+        document.getElementById("res").style.color = "red";
+
+        function validate(elem){
+            //document.getElementById("res").innerTEXT = elem.value;
+            if(isNaN(elem.value)){
+                document.getElementById("res").innerText = "please enter number only";
+            }
+            else{
+                document.getElementById("res").innerText = " ";
+                if(elem.value.length > 10){
+                    document.getElementById("res").innerText = "please enter only 10 digits";
+                }else{
+                    document.getElementById("res").innerText = " ";
+                }
+            }
+        }
+    </script>
+</html> 

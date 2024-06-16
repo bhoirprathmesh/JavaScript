@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <title>ClearTimeout() Function</title>
+    </head>
+    <body>
+        <button onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+    </body>
+    <script type = "text/javascript" >
+        var my;
+       function start() {
+            my = setTimeout(function(){
+                document.write("<h1>Welcome</h1>");
+            }, 5000);
+       }
+
+       function stop() {
+            clearTimeout(my);
+            alert("Timeout stopped !");
+       }
+    </script>
+</html> 

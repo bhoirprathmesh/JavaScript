@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Methods of Array</title>
+        <h2>Welcome to the JavaScript Program</h2>
+        <h1 id = "result"></h1>
+        <button onClick="pop()" id = "result">Pop</button>
+        <button onClick="push()" id = "result">Push</button>
+        <button onClick="slice()" id = "result">Slice</button>
+        <button onClick="reverse()" id = "result">Reverse</button>
+        <button onClick="shift()" id = "result">Shift</button>
+    </head>
+    <body>
+        
+    </body>
+    <script type = "text/javascript" >
+        var fruits = ["apple", "orange", "pineapple", "mango"]
+        var vegitables = ["potato", "ladyfingers", "tomato", "ginger"]
+        //var flag = Array.isArray(fruits);
+        //var flag = fruits.valueOf();
+        //var flag = fruits.join(" | ");
+        //document.write("<h1>"+flag+"</h1>");
+        var shop = fruits.concat(vegitables);
+        //document.write("<h1>"+shop+"</h1>");
+
+        //var index = shop.indexOf("potato");
+        //document.write("<h1>"+index+"</h1>");
+
+        //shop.pop();
+        //document.write("<h1>"+shop+"</h1>");
+
+        //shop.push("onion");
+        //document.write("<h1>"+shop+"</h1>");
+        /*
+        .   |
+        .   |
+        .   V
+        we can also use the given array method in this way.
+        */
+        
+        //also
+        var demo = shop;
+        document.getElementById("result").innerHTML = demo
+        function pop(){
+            demo.pop();
+            document.getElementById("result").innerHTML = demo;
+        }
+
+        function push(){
+            var x = prompt("Please the name of fruits or vegitables", "");
+            demo.push(x);
+            document.getElementById("result").innerHTML = demo;
+        }
+
+        function slice(){
+            var x = demo.slice(3);   //starting 3 element get slice.
+            document.getElementById("result").innerHTML = x;
+        }
+
+        function reverse(){
+            var r = demo.reverse();
+            document.getElementById("result").innerHTML = r;
+        }
+
+        function shift(){
+            demo.shift();
+            document.getElementById("result").innerHTML = demo;
+        }
+    </script>
+</html>

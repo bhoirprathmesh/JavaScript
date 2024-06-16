@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <title>DOM_Function</title>
+    </head>
+    <body>
+        <div class = "main">
+            Document Object (DOM)
+        </div>
+        <div class = "main">
+            (DOM) Document Object 
+        </div>
+    </body>
+    <script type = "text/javascript" >
+        //var x = document.getElementsByClassName("main")[0].innerHTML;
+        //console.log(x);
+        //alert(x);
+
+        document.getElementsByClassName("main")[0].innerHTML = "(DOM) Document Object";
+        document.getElementsByClassName("main")[1].innerHTML = "Document Object (DOM)";
+    </script>
+</html>

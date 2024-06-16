@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Css Effect</title>
+    <style type="text/css">
+        #main {
+            color: Red;
+            font-size: 50px;
+            text-align: center;
+            margin-top: 150px;
+            cursor: pointer;
+            transition: 2s; 
+        }
+    </style>
+</head>
+<body>
+    <div id="main" onmouseover="modify()" onmouseout="unmodify()">
+        Prathmesh Mahendra Bhoir
+    </div>
+    <script type="text/javascript">
+        function modify() {
+            document.getElementById('main').style.fontSize = "100px"; 
+            //also use for color, size,, etc
+        }
+
+        function unmodify() {
+            document.getElementById('main').style.fontSize = "50px"; 
+        }
+    </script>
+</body>
+</html>
