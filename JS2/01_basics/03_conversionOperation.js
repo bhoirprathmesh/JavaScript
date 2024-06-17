@@ -1,3 +1,5 @@
+// **************Conversion**************
+
 let score = "33"
 
 console.log(typeof score)
@@ -65,3 +67,45 @@ let stringNumber = String (someNumber)
 console.log(stringNumber);
 console.log(typeof stringNumber);
 
+// *********Operations*************
+
+let value = 3
+let negValue = -value
+console.log(negValue);
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**3);
+// console.log(2/3);
+// console.log(2%3);
+
+let str1 = "hello"
+let str2 = " hitesh" 
+let str3 = str1 + str2 
+console.log(str3);
+I
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
+
+/*
+- if string first is then futher all is considered as string e.g. console.log("1" + 2 + 2);
+or
+- if string is last then the first numbers which are present it give conversion then futher all is considered as string e.g. console.log(1 + 2 + "2");
+*/
+
+console.log(+true);  //--> give output 1
+console.log(+"");   //--> give output 0 
+
+let num1, num2, num3
+num1 = num2 = num3 = 2 + 2
+
+let gameCounter = 100
+gameCounter++; 
+console.log(gameCounter);
+
+let gameCounter1 = 100
+++gameCounter1; 
+console.log(gameCounter1);
