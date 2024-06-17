@@ -49,7 +49,7 @@ console.log(valueInNumber5) // --> give output NaN(Not a Number)
 let isLoggedIn = "1"
 
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-console.log(booleanIsLoggedIn);
+console.log(booleanIsLoggedIn); //--> give output 1
 
 /*
 1 => true
