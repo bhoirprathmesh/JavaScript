@@ -23,5 +23,5 @@ symbol => unique
 
 //object
 console.log(typeof "pratham")
-console.log(typeof undefined)
+console.log(typeof undefined) //returns undefined
 console.log(typeof null) //return object
