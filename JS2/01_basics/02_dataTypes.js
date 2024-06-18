@@ -25,3 +25,41 @@ symbol => unique
 console.log(typeof "pratham")
 console.log(typeof undefined) //returns undefined
 console.log(typeof null) //return object
+
+// Summary :
+
+// Primitive
+// 7 types String, Number, Boolearn, null, undefined, Symbol, BigInt
+
+const score = 100
+const scoreValue = 100.3
+
+const isLoggedIn1 = false;
+const outsideTemp = null
+let userEmail;
+
+const id = Symbol('123')
+const anotherId = Symbol('123')
+console.log(id === anotherId);  // retrun false
+
+const bigNumber = 4511485489653271854n
+
+// Reference (Non primitive)
+// Array, Objects, Functions
+
+const heros = ["shaktiman", "naagraj", "doga"];
+
+let myObj = {
+    name: "hitesh",
+    age: 22,
+}
+
+const myFunction = function(){ 
+    console.log("Hello world");
+}
+
+console.log(typeof bigNumber) // return bigint
+console.log(typeof heros) // return onject
+console.log(typeof myObj) // return object
+console.log(typeof myFunction) // return function
+console.log(typeof id) // return symbol
