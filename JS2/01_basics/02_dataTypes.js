@@ -63,3 +63,33 @@ console.log(typeof heros) // return onject
 console.log(typeof myObj) // return object
 console.log(typeof myFunction) // return function
 console.log(typeof id) // return symbol
+
+
+
+// ********************************************
+/*
+Stack Memory (use Primitive datatype) - we get copy 
+Heap Memory (use Non-Primitive datatype) - we get reference of the original value as we make change in the memory it will change the original value. 
+*/
+ 
+
+//stack memory
+let myYoutubename = "xyz"
+let anothername = myYoutubename
+anothername = "abc"
+
+console.log(myYoutubename); 
+console.log(anothername);
+
+//heap mmeory
+let user0ne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+    }
+
+let userTwo = userOne
+    
+userTwo.email = "hitesh@google.com"
+    
+console.log(userOne.email);
+console.log(userTwo.email);
