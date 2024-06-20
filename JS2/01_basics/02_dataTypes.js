@@ -82,14 +82,14 @@ console.log(myYoutubename);
 console.log(anothername);
 
 //heap mmeory
-let user0ne = {
+let userOne = {
     email: "user@google.com",
     upi: "user@ybl"
     }
 
 let userTwo = userOne
     
-userTwo.email = "hitesh@google.com"
+userTwo.email = "Pratham@google.com"
     
 console.log(userOne.email);
 console.log(userTwo.email);
