@@ -14,7 +14,7 @@ myArr.pop()
 
 myArr.unshift (9)  //add element to the start of the array
 myArr.unshift (8)  
-myArr.shift()  // to remove the starting element fromt the array
+myArr.shift()  // to remove the starting element from the array
 
 console.log(myArr.includes (8));
 console.log(myArr.indexOf(18));
