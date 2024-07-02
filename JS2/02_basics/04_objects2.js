@@ -66,3 +66,34 @@ console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));  // least use
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+const course1 = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "prathamesh"
+}
+
+// three way to print abstraction
+console.log(course1.courseInstructor)
+
+const {courseInstructor} = course1    // de-structureing
+// is use to reduce the number of times object is call for multiple times
+console.log(courseInstructor);
+
+const {courseInstructor : instructor} = course1
+console.log(instructor)
+
+// json format for the object
+// {
+//     "name" : "Prathmesh",
+//     "coursename" : "js",
+//     "price" : "999"
+// }
+
+// it also be in the form of array with in object.
+[
+    {},
+    {},
+    {}
+]
+    
