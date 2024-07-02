@@ -1,6 +1,6 @@
 // array
 
-const myArr = [0, 1 , 2, 3, 4, 5]
+const myArr = [0, 1 , 2, 3, 4, 5, "dogs"]
 const myHeors = ["shaktiman", "naagraj"]
 
 const myArr2 = new Array(1, 2, 3, 4) 
@@ -16,7 +16,7 @@ myArr.unshift (9)  //add element to the start of the array
 myArr.unshift (8)  
 myArr.shift()  // to remove the starting element from the array
 
-console.log(myArr.includes (8));
+console.log(myArr.includes(8));
 console.log(myArr.indexOf(18));
 
 console.log(myArr);
