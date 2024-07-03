@@ -4,7 +4,7 @@
 // object literals
 const mysym = Symbol("Key1")
 
-const jsuser = {                    // it is the object which is define from the key and value pair
+const jsuser = {                      // it is the object which is define from the key and value pair
     name : "Pratham", 
     "Full_Name" : "Prathmesh Mahendra Bhoir",  // here we cant access the fullname without by dot we need to use the square brackets
     age : 18,
@@ -22,7 +22,7 @@ console.log(jsuser["Full_Name"])
 console.log(jsuser[mysym])
 console.log(typeof jsuser[mysym])
 
-jsuser.email = "Pratham@chatgpt.com" //change
+jsuser.email = "Pratham@chatgpt.com"    //change
 // Object.freeze(jsuser)                // stop changes 
 jsuser.email = "Pratham@microsoft.com"  // makes no changes
 console.log(jsuser); 

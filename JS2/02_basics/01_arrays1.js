@@ -19,9 +19,10 @@ myArr.shift()  // to remove the starting element from the array
 console.log(myArr.includes(8));
 console.log(myArr.indexOf(18));
 
-console.log(myArr);
+console.log(myArr);   // 1 ------------
+//                                    |--> both are the same
+const newArr = myArr.join()   // 2 ----      
 
-const newArr = myArr.join()
 console.log(myArr);  //print the same array as it is 
 console.log(newArr);  //bind the array and convert it into the string 
 console.log(typeof newArr);
