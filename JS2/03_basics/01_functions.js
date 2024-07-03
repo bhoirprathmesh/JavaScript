@@ -30,7 +30,7 @@ console.log("Result: " + result);
 console.log("Result: ", result);
 
 function loginUserMessage (username) {
-    if (username === undefined) {
+    if (username === undefined) {       // or !username
         console.log("PLease enter a username");
         return
     }
