@@ -38,3 +38,41 @@ function loginUserMessage (username) {
 }
 console.log(loginUserMessage("Pratham"))
 console.log(loginUserMessage())   // --> give output undefined
+
+// depending upon the parameters it may be of rest operator or spread operator
+function calculateCarprice(...num1){         // for now it is the rest operator
+    return num1
+}
+
+console.log(calculateCarprice(200, 400, 500))
+
+function calculateCarprice1(val1, val2, ...num1){ 
+    return num1
+}
+
+console.log(calculateCarprice1(200, 400, 500, 600))
+
+const user ={
+    username : "Pratham",
+    price : 199
+}
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+}
+
+handleObject(user)
+handleObject({
+    username : "Nikita",
+    price : 200
+})
+
+const myNewArray = [200, 400, 600, 800]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200, 400, 500, 1000]));
+
