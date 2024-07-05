@@ -45,14 +45,14 @@ if (true) {
 
 // +++++++++ interesting +++++++++++++
 
+console.log(addone(5))        // it get run because as function is just declared here
+
 function addone (num) {
     return num + 1
 }
 
-addone(5)
+addTwo(5)    // gives error as we declare the function and hold it into the variable
 
 const addTwo = function(num) {
     return num + 2
 }
-
-addTwo(5) 
