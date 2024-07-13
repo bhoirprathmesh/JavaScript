@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+    <!--DOM  --Document Object Model -->
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">DOM learing with Chai aur Code. <span style="display : none">test text</span></h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+<script>
+    document.getElementById("title").innerHTML  // Output : 'DOM learing with Chai aur Code. <span style="display : none">test text</span>' -->(gives us hole html)
+    // const element = document.getElementById("title");
+    // element.innerHTML =  "DOM learing with Prathmesh"
+
+    title.style.backgroundColor = 'green' 
+    title.style.padding="15px"
+    title.style.borderRadius = "5px"
+    title.style.borderRadius = "15px"
+    title.innerText     // Output: 'DOM learning on Chai aur code -->(text which is actual visible there is more which is remove due to some display property)
+    title.textContent   // Output: 'DOM learning on Chai aur code test text -->(we get the whole content in the text)
+
+    // document.getElementsByClassName("")
+    // querySelector
+</script>
+</html>
