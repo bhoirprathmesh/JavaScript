@@ -17,6 +17,22 @@
         console.log(parent);
         console.log(parent.children);
         console.log(parent.children[1].innerHTML);
+
+         for (let i = 0; i < parent.children.length; i++) {
+              console.log(parent.children[i].innerHTML);           
+         }
+        
+        parent.children[1].style.color = "orange"
+        console.log(parent.firstElementChild);          // first element
+        console.log(parent.lastElementChild);           // last element
+
+        const dayOne = document.querySelector('.day')
+        console.log(dayOne);                        // select the day first
+        console.log(dayOne.parentElement);          // move from dayone to the parent 
+        console.log(dayOne.nextElementSibling);     // move from first to the next element
+        
+        // NodeList is the tree structure
+        console.log("NODES : ", parent.childNodes);
     </script>
 </body>
 </html>
