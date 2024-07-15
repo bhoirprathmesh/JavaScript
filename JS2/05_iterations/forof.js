@@ -42,6 +42,6 @@ const myObject = {
     game2: 'Spiderman'
 }
 
-for (const [key, value] of myObject) {
-    console.log(key, ':-', value);     // object are not iterable for that we use (forin) 
-}
+// for (const [key, value] of myObject) {
+//     console.log(key, ':-', value);     // object are not iterable for that we use (forin) 
+// }
