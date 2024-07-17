@@ -1,0 +1,18 @@
+Javascript
+(- features of Default Javascript)
+1. Synchronous (code which is run one after the another)
+2. Single Threaded (so it is slow)
+
+Execution Context : execute one line of code at a time.
+(each operation waits for the last one to complete before executing)
+
+Blocking Code :
+- Block the flow of Program (waits for the last one to complete)
+- Read File Sync
+
+Non Blocking code :
+- Does not block execution (continue execution)
+- Read File Async
+
+Asynchronous Code :
+

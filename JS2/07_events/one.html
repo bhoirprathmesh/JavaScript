@@ -43,27 +43,30 @@
     // event propagation   --> 1. event bubbling & 2. event capturing
     document.getElementById('owl').addEventListener('click', function(e){
         console.log("owl clicked");
+        //e.stopPropagation()   --> it will not bubbling the element i.e stop it
+    }, false)          
+    
+    // false is the default parameter write aur not write not matter.(but it is the example of event bubbling (bottom to top))
+    // it might be true is the default parameter write aur not write not matter.(but it is the example of event capturing (top to bottom))
+    
+    document.getElementById('google').addEventListener('click', function(e){
+        e.preventDefault();
         e.stopPropagation()
-    }, false)          // false is the default parameter write aur not write not matter.(it is the example of event bubbling)
-    
-    // document.getElementById('google').addEventListener('click',function(e){
-    //     e.preventDefault();
-    //     e.stopPropagation()
-    //     console.log("google clicked");
-    // }, false)
+        console.log("google clicked");
+    }, false)
    
-    
+    // remove 
     document.querySelector('#images').addEventListener('click', function(e){
         console.log(e.target.tagName);
         if (e.target.tagName === 'IMG') {
             console.log(e.target.id);
-            let removeIt = e.target.parentNode
+            let removeIt = e.target.parentNode        // target -- images and parentNode -- li tag
             removeIt.remove()
-        }
-    
-        
+        }    
     })
     
     //removeIt.parentNode.removeChild(removeIt)
+
+    // learn more about events above it too basics.
 </script>
 </html>
